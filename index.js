@@ -10,7 +10,7 @@ function main() {
     const config = view.config;
     if(!config) return;
     let listaIt = new ArrayRandomIterator(lista,config.max)
-    const buscaIt = new BuscaIt(config.url, lista[Symbol.iterator]());
+    const buscaIt = new BuscaIt(config.url, listaIt);
     const geraBuscaView = new GeraBuscaView(buscaIt);
     geraBuscaView.run();
 }
