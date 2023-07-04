@@ -2,7 +2,7 @@ import ArrayRandomIterator from "./ArrayRandomIterator.js";
 import lista from "./br-utf8.js";
 import BuscaIt from "./buscaIt.js";
 import GeraBuscaView from "./geraBuscaView.js";
-import View from "./view.js"
+import View from "./uRLParamConfigParser.js"
 
 
 function main() {
