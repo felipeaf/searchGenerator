@@ -1,13 +1,13 @@
-class BuscaIt {
+class SearchIt {
 
-    constructor(_url, _dicionarioIt) {
+    constructor(_url, _dictionaryIt) {
         this._url = _url;
-        this._dicionario = _dicionarioIt;
+        this._dicionary = _dictionaryIt;
         this.done = false;
     }
 
     next() {
-        let r = this._dicionario.next();
+        let r = this._dicionary.next();
         if(r.done) {
             return r;
         }
@@ -19,4 +19,4 @@ class BuscaIt {
 
 }
 
-export default BuscaIt;
+export default SearchIt;
