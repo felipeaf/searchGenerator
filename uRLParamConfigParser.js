@@ -1,4 +1,4 @@
-export default class mainView {
+export default class ParamParser {
 
 
     tryParseConfig() {
