@@ -10,7 +10,9 @@ export default class ParamParser {
         let queryData = new URLSearchParams(window.location.search)
         this._config = {
             url: queryData.get("url"),
-            max: queryData.get("max")
+            max: queryData.get("max"),
+            tmin: queryData.get("tmin"),
+            tmax: queryData.get("tmax")
         }
 
     }

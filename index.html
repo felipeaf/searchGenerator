@@ -12,9 +12,11 @@
     <body>
         <form id="config" name="config">
             <label for="url">URL: </label><input type="text" id="url" name="url">
-            <label for="max">max: </label><input type="number" id="max" name="max">
-            <button type="submit">Enviar</button>
-            <button type="button" id="stopButton">Parar</button>
+            <label for="max">Number of queries: </label><input type="number" id="max" name="max">
+            <label for="tmin">minimum time between queries (seconds): </label><input type="number" id="tmin" name="tmin">
+            <label for="tmax">maximum time (seconds): </label><input type="number" id="tmax" name="tmax">
+            <button type="submit">Start</button>
+            <button type="button" id="stopButton">Stop</button>
         </form>
         <script type="module" src="index.js" async defer></script>
     </body>

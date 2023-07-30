@@ -14,7 +14,7 @@ function main() {
     view.updateView(config);
     const listaIt = new ArrayRandomIterator(lista,config.max)
     const buscaIt = new SearchIt(config.url, listaIt);
-    const geraBuscaView = new GeraBuscaView(buscaIt);
+    const geraBuscaView = new GeraBuscaView(buscaIt, config.tmin, config.tmax);
     geraBuscaView.run();
 }
 

@@ -6,14 +6,16 @@ const STATES = {
 }
 
 export default class GeraBuscaView {
-    constructor(_buscaIt) {
-        this._buscaIt = _buscaIt;
+    constructor(buscaIt, tmin, tmax) {
+        this._buscaIt = buscaIt;
+        this._tmin = tmin*1000;
+        this._tmax = tmax*1000;
         this._state = STATES.STOPPED;
         document.getElementById("stopButton").addEventListener("click", this.stop.bind(this));
     }
 
     _randomTimeout() {
-        return getRandomArbitrary(3000, 10000);
+        return getRandomArbitrary(this._tmin, this._tmax);
     }
 
     run() {
